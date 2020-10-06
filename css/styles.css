@@ -1,0 +1,71 @@
+/*selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #CCC;
+    font-size: 50px;
+}
+
+
+/* Selectores de etiqueta*/
+p{
+   /** font-size: 24px; */
+}
+
+h1, h2, h3, h4{
+    font-weight: 400;
+}
+
+/* Selectores descendentes */
+div span{
+    color: sienna;
+    font-size: 33px;
+}
+
+/* Selectro de indentificador */
+#miIdentificador{
+    font-size: 40px;
+}
+
+
+/* Selector de clase */
+.miClase{
+    font-weight: 500;
+    font-size: 33px;
+    color: chocolate;
+}
+
+/* Elaborar codigo HTML con una lista de las 
+Principales 5 noticias y al tercer elemento de la 
+lista colocarle con color y tamaño diferente. 
+Color de fondo del body en gris.*/
+
+.claseUnidadesDeMedida{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,  0, 0, 0.3);
+    font-size: 30px;
+    /*Abosolutas*/
+    /* CM */
+   /** font-size: 2cm; */
+    /* pulgadas */
+   /** font-size: 2in; */
+    /** Relativas */
+    /* pixeles
+    font-size: 12px;
+     pixeles 
+    font-size: 50%;
+     */
+
+}
+
+.claseUnidadesDeMedida p{
+    font-size: 0.6rem;
+}
+
+.caja{
+    width: 150px;
+    height: 150px;
+    background:green;
+    border-bottom: solid 8px #000;
+}

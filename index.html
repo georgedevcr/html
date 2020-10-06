@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title></title>
+        <script>
+            var numberRandom = Math.floor(Math.random() * 7) + 1;
+          /*  * Este es un comentario
+            */
+
+            alert(numberRandom);
+
+           function sendForm(){
+               var secondName = document.getElementById('txtSecondName').value;
+               console.log(secondName);
+          
+           }
+           function getFruit(fruit){
+                alert(fruit);
+           }
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+            <!--       
+            <tr>
+                <td>aaaaaaaaa 1</td>
+                <td>ddd 2</td>
+                <td>ejene</td>
+            </tr>
+             -->
+            <tr>
+                <td>Contenido 1</td>
+                <td>Contenido 2</td>
+                <td>Contenido 3</td>
+            </tr>
+            <tr>
+                <td>Contenido 1</td>
+                <td>Contenido 2</td>
+                <td>Contenido 3</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td colspan="2">
+                    asdfasdf
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table border="1" width="100%">
+                        <thead>
+                            <tr>
+                            <td>Ejercicio</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Copiar 5 noticias: titulo, 
+                                    pequeña descripcion, imagen, colocarlo en una tabla</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+        <ol>
+            <li>Adrian</li>
+            <li>Alejandro</li>
+            <li>Allan</li>
+            <li>Cindy </li>
+            <li>Diego</li>
+            <li>Jhonathan</li>
+            <li>Manolo</li>
+        </ol>
+        <hr>
+        <h2>Formularios</h2>
+        <form>
+            <input placeholder="Digite su nombre" type="text" name="txtSecondName" id="txtSecondName">
+            <input placeholder="digite su correo" type="email" name="txtEmail"  id="txtEmail">
+            <input placeholder="Digite su telefono" type="number" name="txtPhone" id="txtPhone" >
+            <input type="button" value="Enviar">
+            <input value="asdfasdf" type="submit" value="boton submit">
+            <hr>
+            <select id="selFruit" onchange="getFruit(this.value)">
+                <option>Seleccione</option>
+                <option selected="selected" value="1">Uvas</option>
+                <option value="Manzana">Manzana</option>
+            </select>
+            <input type="radio" value="1">Futbol
+            <hr>
+            <input type="checkbox"> Surf
+            <a onclick="sendForm()" >Enviar</a>
+
+            <textarea cols="50" rows="20" maxlength="50">
+                laksdjflasjd flaksjf lasjkf alsfjasf
+
+            </textarea>
+
+        </form>
+
+    </body>
+
+</html>
