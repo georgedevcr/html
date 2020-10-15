@@ -1,0 +1,28 @@
+#divTest{
+    background-color: red;
+}
+
+
+@media only screen and (max-width: 650px){
+    #divTest{
+        background-color: blue;
+    }
+    .divClass{
+        /* aqui el codigo */
+        font-size: 14px;
+    }   
+}
+
+/**
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+
+Practica:  Elaborar una pagina html de un articulo: titulo, subtitulo, imagen y descripcion
+            - Mobile
+            - Tablet
+            - Laptop
+**/
