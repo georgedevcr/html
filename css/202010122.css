@@ -1,11 +1,17 @@
-body{
-    background-color: green;
-}
+/*
+body {
+    display: flex;
+    
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  */
 
 .contenedor > div{
     background-color: #CCC;
     font-size: 20px;
-    line-height: 70px;
+   
+    
     width: 100px;
     margin: 10px;
     /**text-align: center;*/
@@ -20,5 +26,7 @@ body{
      /*  flex-direction: row-reverse; */
    /*flex-direction: row-reverse;*/
    /* justify-content: center; */
-   justify-content: flex-end;
+    height: 100px;
+    width: 350px;
 }
+   

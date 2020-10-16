@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+  <script>
+
+      $(document).ready(function(){
+        //crea una etiqueta y 
+        var miVariable = $('#miElemento').addClass('miClase');
+
+        console.log(miVariable);
+
+        $('#miLink').click(function(){
+         
+            $('#miElemento').html('<input type="text" value="">');
+
+
+            var valorElemento = $('#correo').val('Jorge Torres');
+            console.log(valorElemento);
+        });
+
+        $('#frutas').change(function(){
+          alert($(this).val());
+          $(this).append('<option>Mango</option>');
+          $(this).prepend('<option>Mandarina</option>');
+          $('#elementoOculto').show(2000, function(){
+            alert('ya pasaron dos segundos')
+          });
+        });
+
+
+
+
+
+
+/*
+
+        $('p');
+        $('.miClase');
+        $('input:type[text]');
+
+        */
+
+      });
+
+    
+  </script> 
+  <style>
+    .otraClase{
+      font-size: 30px;
+      color: red;
+    }
+  </style>
+<body>
+<div >
+<span id="miElemento"><h1>TEST</h1></span>
+<input type="text" id="correo" name="correo">
+<a href="#" id="miLink" >Ejecutar</a>
+  </div>
+  <select id="frutas" name="fruntas">
+    <option>Seleccione</option>
+    <option value="Manzanas">manzanas</option>
+    <option value="5">Peras</option>
+    </select>
+
+    <h1 style="display: none;" id="elementoOculto">Elemento Oculto</h1>
+</body>
+
+</html>
