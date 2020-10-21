@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+  <script>
+   $(function() {
+      $('#btnEnviar').click(function(){
+        var miVarible = $('#correo').val(),
+            elementoH1 = $('#miElemento').text();
+
+            $('#frmTest').serialize();
+
+
+            alert($('#frmTest').serialize());
+            $.post('https://google.com', {txtCorreo: miVarible, 
+                                          txtElemento1: elementoH1}, 
+                                          function(respuesta){
+                                              if(respuesta){
+                                                $('#elementoRespuesta').html(respuesta)
+                                                
+                                              }
+                                          });
+
+         var miVariable = '{"name":"John", "age":"30", "city":"New York"}';
+
+         var objetoEnJson = JSON.parse(miVarible);
+
+         $.each(miVarible, function(index, valor){
+            console.log(index);
+            console.log(valor);
+         });
+
+         console.log(objetoEnJson);
+
+
+      })
+    })
+  </script> 
+  <style>
+ 
+  </style>
+<body>
+<div >
+  <form id="frmTest">
+<input type="text" id="miElemento" name="miElemento">
+<input type="text" id="correo" name="correo">
+<a id="btnEnviar">Enviar</a>
+<div id="elementoRespuesta"></div>
+</form>
+</body>
+
+</html>
